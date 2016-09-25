@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.kleiren.bluetoothcontoller.ControllerFragment">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:id="@+id/btnSettings"
+        android:src="@drawable/ic_settings_white_48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnTerminal"
+        android:src="@drawable/ic_computer_black_48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <com.jmedeisis.bugstick.Joystick
+        android:id="@+id/joystickL"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_base"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/btnTerminal"
+        android:layout_toEndOf="@+id/btnTerminal"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp">
+
+        <!-- You may use any View here. -->
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_stick" />
+    </com.jmedeisis.bugstick.Joystick>
+
+
+
+    <com.jmedeisis.bugstick.Joystick
+        android:id="@+id/joystickR"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_base"
+        android:layout_alignTop="@+id/joystickL"
+        android:layout_toLeftOf="@+id/btnSettings"
+        android:layout_toStartOf="@+id/btnSettings"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp">
+
+        <!-- You may use any View here. -->
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_stick" />
+
+    </com.jmedeisis.bugstick.Joystick>
+
+
+</RelativeLayout>
